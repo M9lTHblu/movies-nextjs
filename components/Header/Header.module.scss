@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inner {
+  min-height: 100px;
+  background-color:  rgba(250, 40, 40, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll {
+  box-shadow: 0 8px 7px rgba(0, 0, 0, 0.28);
+}

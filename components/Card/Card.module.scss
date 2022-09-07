@@ -1,0 +1,108 @@
+.card {
+  min-height: 200px;
+  margin-bottom: 52px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #988F8F;
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4D4747;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+
+  @media (min-width: 767px) {
+    flex-wrap: nowrap;
+    background-color: #C4C4C4;
+  }
+}
+
+.img {
+  position: relative;
+  min-width: 168px;
+  img {
+    max-width: 112px;
+    height: 168px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 2;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.duration {
+  right: 0;
+  width: 184px;
+  padding: 9px 0 9px 18px;
+  color: #000000;
+  background-color: #C4C4C4;
+  clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    path{
+      fill: #FA2828;
+    }
+  }
+}
+
+.title {
+  margin:0 20px 12px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.body {
+  padding: 32px 0 32px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #4D4747;
+}
+
+
+.actors {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.list{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #E5E5E5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  padding-right: 24px;
+  font-weight: 400;
+  font-size: clamp(12px, 1.2vw, 16px);
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
