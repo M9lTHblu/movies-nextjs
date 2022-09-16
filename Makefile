@@ -2,7 +2,7 @@ dev:
 	npx next dev
 build:
 	npx next build
-start:
+prev:
 	npx next start
 test:
 	npm run test
