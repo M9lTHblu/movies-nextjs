@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   productionBrowserSourceMaps: true,
   images: {
-    domains: ['www.kinopoisk.ru']
+    domains: ['www.kinopoisk.ru', 'floating-sierra-20135.herokuapp.com']
   }
 }
 

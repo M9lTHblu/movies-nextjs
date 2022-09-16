@@ -4,7 +4,7 @@ import { Card } from '../components/Card'
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const {id} = context.params
-  const resp = await fetch(`${process.env.API_URL_MOVIE}${id}`)
+  const resp = await fetch(`${process.env.MOVIE}${id}`)
   const movieData = (await resp.json()).data
 
 

@@ -4,7 +4,7 @@ import { CardList } from '../components/CardList'
 import { Movies } from '../components/types'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const resp = await fetch(process.env.API_URL_BASE)
+  const resp = await fetch(process.env.MOVIES)
   const moviesData = (await resp.json()).data
 
   if (!moviesData) {
